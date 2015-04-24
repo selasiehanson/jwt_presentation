@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+     <link rel="stylesheet" href="app/compiled/css/app.css" />
+  </head>
+  <body>  
+    <section id="mainContent">
+      <ng-view></ng-view>
+    </section>
+    <script src="jspm_packages/system.js"> </script>
+    <script src="config.js"> </script>
+    <script>
+      System.import('app/src/js/app').then(function (a){
+          angular.element(document).ready(function (){
+            angular.bootstrap(document, ['app']);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<div class="panel ">
+  <div class="col-sm-3 col-md-4 col-sm-offset-4 panel-default plumberboxsmall">
+    <div> <h2> Login </h2> </div>
+    <div class="table-responsive">
+      <form class="" ng-submit="Vm.login(data)" method="post">
+        <br/>
+        <div class="form-group">
+          <input type="text" class="form-control" ng-model="data.email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" ng-model="data.password" placeholder="Password">
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="LOGIN" class="btn btn-primary"/>
+        </div>
+      </form>
+    </div>
+  </div>
